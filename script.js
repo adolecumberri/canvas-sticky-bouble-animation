@@ -44,7 +44,7 @@ class Bubble {
     }
 
     update () {
-        this.vy += 0.000001;
+        this.vy += 0.0000001;
         this.vr += 0.009;
         this.y -= this.vy;
         this.x += this.vx;
@@ -103,7 +103,6 @@ function handleBubble () {
 
     if(bubbles.length < (window.innerWidth / 4)){
         addBubble();
-        // console.log(bubbles);
     }
     
     if(bgBubbles.length < (window.innerWidth / 12)){
@@ -113,7 +112,6 @@ function handleBubble () {
 
 
 function animate() {
-    console.log(canvas.width, );
     ctx.clearRect(0,0, canvas.width, canvas.getAttribute('height'));
     bgCtx.clearRect(0,0,bgCanvas.width, canvas.getAttribute('height'));
 
@@ -158,7 +156,8 @@ window.addEventListener('resize', function() {
 });
 
 
-setInterval( () => {
-console.log("bubbles: " + bubbles.length);
-console.log("bg bubbles: " +bgBubbles.length);
-}, 1000);
+// setInterval( () => {
+// console.log("bubbles: " + bubbles.length);
+// console.log("bg bubbles: " +bgBubbles.length);
+
+// }, 1000);
