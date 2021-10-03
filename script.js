@@ -15,6 +15,9 @@ bgCanvas.width = window.innerWidth;
 bgCanvas.setAttribute('height', window.innerHeight);
 
 
+//velocidad Y (vertical)
+// velocidad de "shrink"
+//color
 
 
 //Arrays con las burbujas de cada tipo de canvas.
@@ -44,8 +47,8 @@ class Bubble {
     }
 
     update () {
-        this.vy += 0.0000001;
-        this.vr += 0.009;
+        this.vy += 0.0001;
+        this.vr += 0.015;
         this.y -= this.vy;
         this.x += this.vx;
         if(this.radius > 1){

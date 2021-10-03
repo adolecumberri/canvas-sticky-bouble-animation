@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-body {background-color: #ad0170;}
+body {background-color: #0e4e29;}
 
 canvas {
     position: absolute;
@@ -23,4 +23,24 @@ footer{
     line-height: 50px;
     text-align: center;
     width: 100%;
+}
+
+.panel-control{
+    background: #e1e1e1;
+    width: 30%;
+    min-width: 216px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-row div:not(.panel-title){
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+}
+
+.panel-title {
+    border-bottom: 2px solid #1b1b1b;
+    margin-bottom: 8px;
 }
