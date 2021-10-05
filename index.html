@@ -11,40 +11,40 @@
   <body>
     <div class="panel-control">
       <div class="panel-row">
-          <div class="panel-title">Higher background:</div>
+        <div class="panel-title">Higher background:</div>
         <div>
           Vertical Speed:
-          <input id="highVSpeed" type="range" min="5" max="10" step="0.01" />
+          <input id="highVSpeed" type="range" min="0.0006" max="0.08" step="0.0001" onchange='handlePanel("vSpeed", this.value)' />
         </div>
         <div>
           Shrink Speed:
-          <input id="highSSpeed" type="range" min="5" max="10" step="0.01" />
+          <input id="highSSpeed" type="range" min="0.005" max="0.1" step="0.0001" value="0.015" onchange='handlePanel("sSpeed", this.value)' />
         </div>
         <div>
-          <input id="highColor" type="color" value="#ff0000" />
+          <input id="highColor" type="color" value="#ff0000" onchange='handlePanel("color", this.value)' />
         </div>
       </div>
-      <div style="margin-top: 20px;" class="panel-row">
+      <!-- <div style="margin-top: 20px" class="panel-row">
         <div class="panel-title">Lower background:</div>
-      <div>
-        Vertical Speed:
-        <input id="lowVSpeed" type="range" min="5" max="10" step="0.01" />
-      </div>
-      <div>
-        Shrink Speed:
-        <input id="lowVSpeed" type="range" min="5" max="10" step="0.01" />
-      </div>
-      <div>
-        <input id="lowColor" type="color" value="#ff0000" />
-      </div>
-    </div>
+        <div>
+          Vertical Speed:
+          <input id="lowVSpeed" type="range" min="5" max="10" step="0.01" />
+        </div>
+        <div>
+          Shrink Speed:
+          <input id="lowVSpeed" type="range" min="5" max="10" step="0.01" />
+        </div>
+        <div>
+          <input id="lowColor" type="color" value="#ff0000" />
+        </div>
+      </div> -->
     </div>
 
     <canvas id="bgCanvas"></canvas>
     <canvas id="canvas"></canvas>
 
     <footer>
-      <span>** Footer Example **</span>
+      <span style="z-index: 40;">** Footer Example **</span>
     </footer>
   </body>
   <script src="script_control.js"></script>
